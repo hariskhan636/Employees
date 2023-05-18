@@ -1,3 +1,23 @@
-<p>
-  employee-detail works!
-</p>
+<h2>{{ employees[index].name }} Details:</h2>
+<table>
+  <thead>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Position</th>
+    <th>Salary</th>
+    <th>Department</th>
+    <th>Hire Date</th>
+    <th>Email</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{ employees[index].id }}</td>
+      <td>{{ employees[index].name }}</td>
+      <td>{{ employees[index].position }}</td>
+      <td>{{ employees[index].salary }}</td>
+      <td>{{ employees[index].department }}</td>
+      <td>{{ employees[index].hire_date }}</td>
+      <td>{{ employees[index].email }}</td>
+    </tr>
+  </tbody>
+</table>

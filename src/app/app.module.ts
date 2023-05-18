@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
 import { RouterModule } from '@angular/router';
+import { DataService } from './data.service';
 
 @NgModule({
   declarations: [AppComponent, EmployeeListComponent, EmployeeDetailComponent],
@@ -21,7 +22,7 @@ import { RouterModule } from '@angular/router';
       },
     ]),
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

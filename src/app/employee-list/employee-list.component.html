@@ -1,3 +1,20 @@
-<p>
-  employee-list works!
-</p>
+<table>
+  <thead>
+    <th>Sr #</th>
+    <th>Name</th>
+    <th>Details</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let emp of employees; let i = index">
+      <td>{{ i }}</td>
+      <td>{{ emp.name }}</td>
+      <td>
+        <button (click)="showDetails(i)">View</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<ng-container *ngIf="details">
+  <app-employee-detail></app-employee-detail>
+</ng-container>

@@ -1,0 +1,25 @@
+table {
+  border-collapse: collapse;
+  border: solid 5px rgb(77, 14, 14);
+  margin: 10px auto;
+}
+
+table td,
+table th {
+  border: solid 2px rgb(77, 14, 14);
+  padding: 10px 15px;
+  text-align: center;
+}
+
+button {
+  color: white;
+  background-color: brown;
+  border: solid 3px rgb(77, 14, 14);
+  padding: 10px;
+  font-weight: bold;
+}
+
+h2 {
+  color: rgb(77, 14, 14);
+  text-align: center;
+}
